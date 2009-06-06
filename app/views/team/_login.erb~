@@ -1,0 +1,11 @@
+
+<% form_remote_tag :url => {:controller => :user, :action => :login} do %>
+<%= flash[:notice] -%>
+<fieldset>
+<label for="user_name">Username</label> <%= text_field "user", "name" -%>
+<label for="user_password">Password</label> <%= password_field "user", "password" -%>
+<%= submit_tag 'Login' -%>
+
+<%= link_to 'Registr',:controller => 'user', :action => 'new' -%>
+</fieldset>
+<% end %>

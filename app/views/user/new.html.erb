@@ -1,0 +1,7 @@
+<% form_tag :controller => :user, :action => :new do %>
+<fieldset>
+<label for="name">Username</label> <%= text_field 'user', 'name' -%>
+<label for="password">Password</label> <%= password_field 'user', 'password' -%>
+</fieldset>
+<%= submit_tag 'Register' -%>
+<% end %>

@@ -1,0 +1,11 @@
+<table>
+  <tr>
+      <td> Hello</td>
+          <td> <%=h  @users.name%>
+	  </td>
+	    </tr>
+	    </table>
+	    <br />
+	    <% form_tag :controller => :user, :action => :login do %>
+	    <%= submit_tag 'Login' -%>
+	    <% end %>

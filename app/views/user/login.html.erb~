@@ -1,0 +1,10 @@
+<%= flash[:notice] -%>
+<% form_tag :controller => :user, :action => :login do %>
+<fieldset>
+<label for="user_name">Username</label> <%= text_field "user", "name" -%>
+<label for="user_password">Password</label> <%= password_field "user", "password" -%>
+</fieldset>
+<%= submit_tag 'Login' -%>
+<% end %>
+
+<%= link_to 'Registr',:controller => 'user', :action => 'new' -%>
